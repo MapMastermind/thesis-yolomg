@@ -1,0 +1,421 @@
+{
+  "protocol": "evalB_ebbox_bins_fd_alpha",
+  "weights": {
+    "baseline_mixed640_zeroP": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/weights/best.pt",
+    "fdgate_trained_tau0015": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_fdgate_energy_tau0015_e12_gpu0/weights/best.pt"
+  },
+  "gate_tau": 0.015,
+  "gate_k": 120.0,
+  "imgsz": 640,
+  "conf_nms": 0.001,
+  "iou_nms": 0.4,
+  "n_video_gt_instances": 3840,
+  "n_unique_video_frames": 3840,
+  "e_bbox_definition": "mean(abs(FD_BGR)) inside GT xyxy on native FD resolution",
+  "e_frame_definition": "mean(abs(letterbox(FD,640,false))) per frame",
+  "bin_edges_e_bbox": [
+    -Infinity,
+    3.7901098728179936,
+    7.720752716064454,
+    13.478539085388183,
+    21.596517181396486,
+    Infinity
+  ],
+  "bin_labels": [
+    "Q0–Q20 e∈[-inf,3.79)",
+    "Q20–Q40 e∈[3.79,7.721)",
+    "Q40–Q60 e∈[7.721,13.48)",
+    "Q60–Q80 e∈[13.48,21.6)",
+    "Q80–Q100 e∈[21.6,inf)"
+  ],
+  "results_by_bin": {
+    "baseline_mixed640_zeroP__gate_off": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8658854166666666,
+        "hit_rate_iou_0.75": 0.6106770833333334,
+        "mean_best_iou": 0.7065850394603027,
+        "median_best_iou": 0.7949150800704956
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9713541666666666,
+        "hit_rate_iou_0.75": 0.7395833333333334,
+        "mean_best_iou": 0.7940123371954542,
+        "median_best_iou": 0.8256964087486267
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.98828125,
+        "hit_rate_iou_0.75": 0.8229166666666666,
+        "mean_best_iou": 0.8164926103878921,
+        "median_best_iou": 0.8375395238399506
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9934895833333334,
+        "hit_rate_iou_0.75": 0.8359375,
+        "mean_best_iou": 0.8288619285449386,
+        "median_best_iou": 0.8428004086017609
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8997395833333334,
+        "mean_best_iou": 0.8440648353425786,
+        "median_best_iou": 0.8564954996109009
+      }
+    },
+    "baseline_mixed640_zeroP__gate_energy": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8658854166666666,
+        "hit_rate_iou_0.75": 0.6106770833333334,
+        "mean_best_iou": 0.7065850394603027,
+        "median_best_iou": 0.7949150800704956
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9713541666666666,
+        "hit_rate_iou_0.75": 0.7395833333333334,
+        "mean_best_iou": 0.7940123371954542,
+        "median_best_iou": 0.8256964087486267
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.98828125,
+        "hit_rate_iou_0.75": 0.8229166666666666,
+        "mean_best_iou": 0.8164926103878921,
+        "median_best_iou": 0.8375395238399506
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9934895833333334,
+        "hit_rate_iou_0.75": 0.8359375,
+        "mean_best_iou": 0.8288619285449386,
+        "median_best_iou": 0.8428004086017609
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8997395833333334,
+        "mean_best_iou": 0.8440648353425786,
+        "median_best_iou": 0.8564954996109009
+      }
+    },
+    "baseline_mixed640_zeroP__gate_energy_mix": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8658854166666666,
+        "hit_rate_iou_0.75": 0.6106770833333334,
+        "mean_best_iou": 0.7065850394603027,
+        "median_best_iou": 0.7949150800704956
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9713541666666666,
+        "hit_rate_iou_0.75": 0.7395833333333334,
+        "mean_best_iou": 0.7940123371954542,
+        "median_best_iou": 0.8256964087486267
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.98828125,
+        "hit_rate_iou_0.75": 0.8229166666666666,
+        "mean_best_iou": 0.8164926103878921,
+        "median_best_iou": 0.8375395238399506
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9934895833333334,
+        "hit_rate_iou_0.75": 0.8359375,
+        "mean_best_iou": 0.8288619285449386,
+        "median_best_iou": 0.8428004086017609
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8997395833333334,
+        "mean_best_iou": 0.8440648353425786,
+        "median_best_iou": 0.8564954996109009
+      }
+    },
+    "fdgate_trained_tau0015__gate_off": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8489583333333334,
+        "hit_rate_iou_0.75": 0.5989583333333334,
+        "mean_best_iou": 0.6927684376593485,
+        "median_best_iou": 0.7949455082416534
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9609375,
+        "hit_rate_iou_0.75": 0.7291666666666666,
+        "mean_best_iou": 0.7836916555752396,
+        "median_best_iou": 0.8207202255725861
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9791666666666666,
+        "hit_rate_iou_0.75": 0.8111979166666666,
+        "mean_best_iou": 0.8090067632535162,
+        "median_best_iou": 0.8363035023212433
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9921875,
+        "hit_rate_iou_0.75": 0.8450520833333334,
+        "mean_best_iou": 0.8252037188503891,
+        "median_best_iou": 0.8409703373908997
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8971354166666666,
+        "mean_best_iou": 0.8415772984347617,
+        "median_best_iou": 0.8532188236713409
+      }
+    },
+    "fdgate_trained_tau0015__gate_energy": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8489583333333334,
+        "hit_rate_iou_0.75": 0.5989583333333334,
+        "mean_best_iou": 0.6927684376593485,
+        "median_best_iou": 0.7949455082416534
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9609375,
+        "hit_rate_iou_0.75": 0.7291666666666666,
+        "mean_best_iou": 0.7836916555752396,
+        "median_best_iou": 0.8207202255725861
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9791666666666666,
+        "hit_rate_iou_0.75": 0.8111979166666666,
+        "mean_best_iou": 0.8090067632535162,
+        "median_best_iou": 0.8363035023212433
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9921875,
+        "hit_rate_iou_0.75": 0.8450520833333334,
+        "mean_best_iou": 0.8252037188503891,
+        "median_best_iou": 0.8409703373908997
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8971354166666666,
+        "mean_best_iou": 0.8415772984347617,
+        "median_best_iou": 0.8532188236713409
+      }
+    },
+    "fdgate_trained_tau0015__gate_energy_mix": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.8489583333333334,
+        "hit_rate_iou_0.75": 0.5989583333333334,
+        "mean_best_iou": 0.6927684376593485,
+        "median_best_iou": 0.7949455082416534
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9609375,
+        "hit_rate_iou_0.75": 0.7291666666666666,
+        "mean_best_iou": 0.7836916555752396,
+        "median_best_iou": 0.8207202255725861
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9791666666666666,
+        "hit_rate_iou_0.75": 0.8111979166666666,
+        "mean_best_iou": 0.8090067632535162,
+        "median_best_iou": 0.8363035023212433
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9921875,
+        "hit_rate_iou_0.75": 0.8450520833333334,
+        "mean_best_iou": 0.8252037188503891,
+        "median_best_iou": 0.8409703373908997
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "n_gt": 768,
+        "hit_rate_iou_0.5": 0.9947916666666666,
+        "hit_rate_iou_0.75": 0.8971354166666666,
+        "mean_best_iou": 0.8415772984347617,
+        "median_best_iou": 0.8532188236713409
+      }
+    }
+  },
+  "hover_proxy_q20": {
+    "baseline_mixed640_zeroP__gate_off": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8658854166666666,
+      "hit_rate_iou_0.75": 0.6106770833333334,
+      "mean_best_iou": 0.7065850394603027,
+      "median_best_iou": 0.7949150800704956
+    },
+    "baseline_mixed640_zeroP__gate_energy": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8658854166666666,
+      "hit_rate_iou_0.75": 0.6106770833333334,
+      "mean_best_iou": 0.7065850394603027,
+      "median_best_iou": 0.7949150800704956
+    },
+    "baseline_mixed640_zeroP__gate_energy_mix": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8658854166666666,
+      "hit_rate_iou_0.75": 0.6106770833333334,
+      "mean_best_iou": 0.7065850394603027,
+      "median_best_iou": 0.7949150800704956
+    },
+    "fdgate_trained_tau0015__gate_off": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8489583333333334,
+      "hit_rate_iou_0.75": 0.5989583333333334,
+      "mean_best_iou": 0.6927684376593485,
+      "median_best_iou": 0.7949455082416534
+    },
+    "fdgate_trained_tau0015__gate_energy": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8489583333333334,
+      "hit_rate_iou_0.75": 0.5989583333333334,
+      "mean_best_iou": 0.6927684376593485,
+      "median_best_iou": 0.7949455082416534
+    },
+    "fdgate_trained_tau0015__gate_energy_mix": {
+      "e_bbox_q20_threshold": 3.7901098728179936,
+      "definition": "GT with e_bbox <= global Q20 on val-video (proxy low-FD / hover)",
+      "n_gt": 768,
+      "hit_rate_iou_0.5": 0.8489583333333334,
+      "hit_rate_iou_0.75": 0.5989583333333334,
+      "mean_best_iou": 0.6927684376593485,
+      "median_best_iou": 0.7949455082416534
+    }
+  },
+  "delta_baseline_gate_vs_off": {
+    "baseline_mixed640_zeroP__gate_energy_minus_gate_off": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      }
+    },
+    "baseline_mixed640_zeroP__gate_energy_mix_minus_gate_off": {
+      "0": {
+        "bin_label": "Q0–Q20 e∈[-inf,3.79)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "1": {
+        "bin_label": "Q20–Q40 e∈[3.79,7.721)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "2": {
+        "bin_label": "Q40–Q60 e∈[7.721,13.48)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "3": {
+        "bin_label": "Q60–Q80 e∈[13.48,21.6)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      },
+      "4": {
+        "bin_label": "Q80–Q100 e∈[21.6,inf)",
+        "delta_hit_0.5": 0.0,
+        "delta_mean_iou": 0.0,
+        "n_gt": 768
+      }
+    }
+  },
+  "gate_alpha_diagnostics": {
+    "gate_energy": {
+      "n_samples": 200,
+      "alpha_mean_avg": 1.0,
+      "stem_energy_mean_avg": 0.9299523156881332,
+      "note": "τ относится к energy motion-стема после Conv, не к e_bbox в пикселях FD"
+    },
+    "gate_energy_mix": {
+      "n_samples": 200,
+      "alpha_mean_avg": 1.0,
+      "stem_energy_mean_avg": 0.9299523156881332,
+      "note": "τ относится к energy motion-стема после Conv, не к e_bbox в пикселях FD"
+    }
+  }
+}

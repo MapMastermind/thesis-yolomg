@@ -1,0 +1,22 @@
+[
+  {
+    "label": "video_native",
+    "split": "test",
+    "n_frames": 72631,
+    "n_gt": 71641,
+    "video_hit_0.5": 0.8871456288996524,
+    "video_hit_0.75": 0.35818874666741113,
+    "Q0_hit_0.5": 0.6507537688442211,
+    "hover_q20": 0.650778142229046
+  },
+  {
+    "label": "zeroP",
+    "split": "test",
+    "n_frames": 72631,
+    "n_gt": 71641,
+    "video_hit_0.5": 0.841892212559847,
+    "video_hit_0.75": 0.3174718387515529,
+    "Q0_hit_0.5": null,
+    "hover_q20": null
+  }
+]

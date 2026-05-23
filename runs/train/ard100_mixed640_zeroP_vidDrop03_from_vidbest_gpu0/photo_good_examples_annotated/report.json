@@ -1,0 +1,92 @@
+[
+  {
+    "image": "/home/tanyadiplom/data/ard100/images/mixed_photos/balv_0002338.jpg",
+    "annotated": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/photo_good_examples_annotated/01_balv_0002338.jpg",
+    "iou": 0.9669237732887268,
+    "pred_conf": 0.002581826876848936,
+    "gt_xyxy": [
+      897.0,
+      687.0004272460938,
+      912.9993896484375,
+      699.0003051757812
+    ],
+    "pred_xyxy": [
+      897.1762084960938,
+      687.0285034179688,
+      913.2515258789062,
+      698.9442749023438
+    ]
+  },
+  {
+    "image": "/home/tanyadiplom/data/ard100/images/mixed_photos/balv_0005762.jpg",
+    "annotated": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/photo_good_examples_annotated/02_balv_0005762.jpg",
+    "iou": 0.9590045213699341,
+    "pred_conf": 0.35302358865737915,
+    "gt_xyxy": [
+      1374.0,
+      786.999755859375,
+      1390.9996337890625,
+      797.9995727539062
+    ],
+    "pred_xyxy": [
+      1373.8880615234375,
+      787.03759765625,
+      1390.7528076171875,
+      798.1937255859375
+    ]
+  },
+  {
+    "image": "/home/tanyadiplom/data/ard100/images/mixed_photos/balv_0006365.jpg",
+    "annotated": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/photo_good_examples_annotated/03_balv_0006365.jpg",
+    "iou": 0.9530471563339233,
+    "pred_conf": 0.7774516940116882,
+    "gt_xyxy": [
+      1228.9996337890625,
+      439.0000305175781,
+      1250.9990234375,
+      450.9999084472656
+    ],
+    "pred_xyxy": [
+      1228.8446044921875,
+      438.9819641113281,
+      1251.1507568359375,
+      451.3998718261719
+    ]
+  },
+  {
+    "image": "/home/tanyadiplom/data/ard100/images/mixed_photos/balv_0003894.jpg",
+    "annotated": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/photo_good_examples_annotated/04_balv_0003894.jpg",
+    "iou": 0.9527910351753235,
+    "pred_conf": 0.07443675398826599,
+    "gt_xyxy": [
+      1029.9993896484375,
+      583.999755859375,
+      1048.9996337890625,
+      595.9996337890625
+    ],
+    "pred_xyxy": [
+      1030.0081787109375,
+      584.203125,
+      1048.9532470703125,
+      595.6697998046875
+    ]
+  },
+  {
+    "image": "/home/tanyadiplom/data/ard100/images/mixed_photos/balv_0008934.jpg",
+    "annotated": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/photo_good_examples_annotated/05_balv_0008934.jpg",
+    "iou": 0.951971173286438,
+    "pred_conf": 0.20085377991199493,
+    "gt_xyxy": [
+      949.9996948242188,
+      432.00054931640625,
+      967.9996948242188,
+      442.0002746582031
+    ],
+    "pred_xyxy": [
+      950.176025390625,
+      432.14190673828125,
+      968.196044921875,
+      441.857421875
+    ]
+  }
+]

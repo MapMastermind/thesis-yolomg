@@ -1,0 +1,10 @@
+# Только видео ARD100 (116802 train / 12978 val), native FD в train2/val2.
+# Без mixed_photos — mixed_policy трактует все кадры как video.
+# См. scripts/run_video_only_zeroP_q0os_e30.sh
+train: /home/tanyadiplom/data/ard100/train.txt
+train2: /home/tanyadiplom/data/ard100/train2.txt
+val: /home/tanyadiplom/data/ard100/val.txt
+val2: /home/tanyadiplom/data/ard100/val2.txt
+
+nc: 1
+names: ['Drone']

@@ -1,0 +1,17 @@
+Eval B — бины e_bbox в GT-bbox + hover-proxy (гл. 3)
+
+Определения метрик e_bbox, Q20, hover-proxy — гл. 2 (analytics/ard100_chapter2_analytics).
+
+Скрипт (Static_YOLOMG / копия в репо):
+  scripts/eval/eval_ebbox_bins_fd_alpha.py
+
+Справочники в этом репозитории:
+  experiments/reference/reference__ebbox_bins__multi_model.json
+  experiments/reference/reference__hover_proxy__q20_calib.json
+
+Результаты по прогонам:
+  experiments/results/block_I__val__video_only/evalB_bins_ebbox_fd_alpha__*.json
+  experiments/results/block_I__test/evalB_bins_ebbox_fd_alpha__*.json
+
+Параметры Eval B (типично):
+  imgsz 640, gate_off, stream2=native, conf_nms 0.001, iou_nms 0.4

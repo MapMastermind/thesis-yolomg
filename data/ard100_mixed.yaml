@@ -1,0 +1,10 @@
+# Смешанное обучение: видео (FD5 во втором потоке) + фото (pseudo второго потока из RGB).
+# Логика: YOLOMG_IMG2_EXP=mixed_policy + YOLOMG_PHOTO_PATH_MARKER (подстрока в пути, напр. /mixed_photos/).
+# Списки ~/data/ard100_mixed: disjoint видео+фото из ARD100 (см. scripts/build_mixed_photo_subset_from_ard100.py).
+train: /home/tanyadiplom/data/ard100_mixed/train.txt
+train2: /home/tanyadiplom/data/ard100_mixed/train2.txt
+val: /home/tanyadiplom/data/ard100_mixed/val.txt
+val2: /home/tanyadiplom/data/ard100_mixed/val2.txt
+
+nc: 1
+names: ['Drone']

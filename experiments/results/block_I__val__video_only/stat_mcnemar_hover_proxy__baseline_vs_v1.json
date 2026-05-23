@@ -1,0 +1,53 @@
+{
+  "weights_native": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_640_b64_e30_p7_video_native/weights/best.pt",
+  "weights_v1": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_videoOnly_adaptiveFusion_b56_e30_pat7_from_videoNative_physgpu0/weights/best.pt",
+  "e_bbox_q20_threshold": 3.8035714626312256,
+  "summaries": {
+    "all_gt": {
+      "name": "all_gt",
+      "n_gt": 12774,
+      "hit_native": 0.9592140284953813,
+      "hit_v1": 0.9720526068576797,
+      "delta_hit_v1_minus_native": 0.012838578362298403,
+      "mcnemar": {
+        "n_pairs": 12774,
+        "b01_miss_native_hit_v1": 226,
+        "b10_hit_native_miss_v1": 62,
+        "discordant": 288,
+        "p_value": 4.43295171286887e-23,
+        "method": "mcnemar_exact_binomial"
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "seed": 42,
+        "delta_mean": 0.012838578362298403,
+        "ci95_low": 0.01025520588695783,
+        "ci95_high": 0.015343666823234736,
+        "p_boot_le0": 0.0
+      }
+    },
+    "hover_q20": {
+      "name": "hover_q20",
+      "n_gt": 2557,
+      "hit_native": 0.8552991787250684,
+      "hit_v1": 0.8991005084082909,
+      "delta_hit_v1_minus_native": 0.04380132968322248,
+      "mcnemar": {
+        "n_pairs": 2557,
+        "b01_miss_native_hit_v1": 152,
+        "b10_hit_native_miss_v1": 40,
+        "discordant": 192,
+        "p_value": 1.425944673485655e-16,
+        "method": "mcnemar_exact_binomial"
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "seed": 42,
+        "delta_mean": 0.04380132968322248,
+        "ci95_low": 0.033242080563159915,
+        "ci95_high": 0.05436057880328515,
+        "p_boot_le0": 0.0
+      }
+    }
+  }
+}

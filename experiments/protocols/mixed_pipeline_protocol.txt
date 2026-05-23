@@ -1,0 +1,31 @@
+Зафиксированный протокол «видео + фото» (одна модель, два режима второго входа)
+
+Идея
+  • Видео: есть последовательность кадров → второй поток как сейчас в YOLOMG — FD5-маска с диска (images2).
+  • Фото: последовательности нет → второй поток не из видео, а pseudo: |Gray − GaussBlur(Gray)| в 3 канала BGR (тот же смысл, что в pseudo_mix).
+
+Реализация в коде (Static_YOLOMG/utils/datasets.py)
+  Режим:  YOLOMG_IMG2_EXP=mixed_policy
+  Маркер: YOLOMG_PHOTO_PATH_MARKER — подстрока в пути основного кадра (train.txt / val.txt), по которой считаем сэмпл «фото».
+           Пример: положить фото в .../mixed_photos/... и задать YOLOMG_PHOTO_PATH_MARKER=/mixed_photos/
+  Если путь содержит маркер → img2 заменяется на pseudo из того же img (train и val, в т.ч. без augment).
+  Если маркера нет → img2 как в файле (FD5 для видео).
+  При mosaic (train) маркер не проверяется — смешанная политика только на ветке без mosaic; при необходимости снизить mosaic в hyp.
+
+Данные
+  1) Видео-кадры: как ARD100 — images/ + images2/ + labels/, пути в train.txt без маркера.
+  2) Фото: images/ + labels/; в train2.txt — любые согласованные пути (можно копии FD5 или чёрные jpg — при mixed_policy для фото всё равно пересчитается из RGB).
+  3) Объединить train.txt = видео-пути + фото-пути; train2.txt — построчно пары (тот же индекс).
+
+Инференс (вне train)
+  По типу входа выбираете ветку:
+    видео  → грузите FD5 в второй поток;
+    фото   → не грузите FD5, считаете pseudo из текущего кадра (тот же код, что _pseudo_second_stream_from_rgb).
+
+Запуск обучения (пример)
+  export YOLOMG_IMG2_EXP=mixed_policy
+  export YOLOMG_PHOTO_PATH_MARKER=/mixed_photos/
+  # дальше обычный train_ard100_640_single_gpu.sh / train.py с data.yaml на смешанные списки
+
+Текущие прогоны pseudo_mix / motion_dropout
+  Это отдельные абляции на одном видео-датасете; финальный «смешанный» режим — mixed_policy + реальные фото в списках + маркер.

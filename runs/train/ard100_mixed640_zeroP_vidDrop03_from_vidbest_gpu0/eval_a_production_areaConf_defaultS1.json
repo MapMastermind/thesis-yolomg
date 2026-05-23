@@ -1,0 +1,34 @@
+{
+  "weights": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/weights/best.pt",
+  "imgsz": 960,
+  "conf_nms_input": 0.001,
+  "iou_nms": 0.4,
+  "pred_rate_conf_threshold": 0.25,
+  "photo_stream_mode": "zero",
+  "photo_only": false,
+  "mixed_photo_zero_stream2": true,
+  "photo": {
+    "name": "photo_zero_stream2",
+    "n_images": 9085,
+    "n_gt": 8934,
+    "hit_rate_iou_0.5": 0.3623237071860309,
+    "hit_rate_iou_0.75": 0.1618535930154466,
+    "mean_best_iou": 0.27077497304789344,
+    "median_best_iou": 0.0,
+    "mean_conf_at_best_iou": 0.28904326192038904,
+    "pred_rate_any_box": 0.4631810676940011,
+    "pred_rate_conf_ge": 0.4631810676940011
+  },
+  "video": {
+    "name": "video_native_stream2",
+    "n_images": 3893,
+    "n_gt": 3840,
+    "hit_rate_iou_0.5": 0.8122395833333333,
+    "hit_rate_iou_0.75": 0.43307291666666664,
+    "mean_best_iou": 0.6166433371826618,
+    "median_best_iou": 0.7313969433307648,
+    "mean_conf_at_best_iou": 0.6776362313578527,
+    "pred_rate_any_box": 0.8525558695093758,
+    "pred_rate_conf_ge": 0.8525558695093758
+  }
+}

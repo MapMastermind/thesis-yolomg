@@ -1,0 +1,34 @@
+{
+  "weights": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_clahe_dog_vidNativeFD_e10p5_from_mixed640best_gpu1/weights/best.pt",
+  "imgsz": 960,
+  "conf_nms_input": 0.001,
+  "iou_nms": 0.4,
+  "pred_rate_conf_threshold": 0.25,
+  "photo_stream_mode": "clahe_dog",
+  "photo_only": false,
+  "mixed_photo_zero_stream2": false,
+  "photo": {
+    "name": "photo_clahe_dog_stream2",
+    "n_images": 9085,
+    "n_gt": 8934,
+    "hit_rate_iou_0.5": 0.7266621893888516,
+    "hit_rate_iou_0.75": 0.2256548018804567,
+    "mean_best_iou": 0.5354898545870667,
+    "median_best_iou": 0.6496950685977936,
+    "mean_conf_at_best_iou": 0.31864087171126004,
+    "pred_rate_any_box": 1.0,
+    "pred_rate_conf_ge": 0.5412217941662081
+  },
+  "video": {
+    "name": "video_native_stream2",
+    "n_images": 3893,
+    "n_gt": 3840,
+    "hit_rate_iou_0.5": 0.84375,
+    "hit_rate_iou_0.75": 0.3216145833333333,
+    "mean_best_iou": 0.6212584346482496,
+    "median_best_iou": 0.695204883813858,
+    "mean_conf_at_best_iou": 0.43105088347647325,
+    "pred_rate_any_box": 1.0,
+    "pred_rate_conf_ge": 0.6593886462882096
+  }
+}

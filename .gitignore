@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.swp
+*.sh
+
+# Веса вне runs/train
+*.pth
+*.onnx
+# epoch-чекпойнты не храним
+runs/train/**/weights/epoch*.pt
+
+# Train / tensorboard
+*.tfevents.*
+events.out.tfevents.*
+nohup.pid
+runs/**/*.log
+runs/**/queue_*
+runs/**/*.pid
+
+# Датасет
+data/ard100_images/
+external_data/

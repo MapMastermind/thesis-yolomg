@@ -1,0 +1,34 @@
+{
+  "weights": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_concat3Control_b56_e12_from_zeroP_physgpu1/weights/best.pt",
+  "imgsz": 960,
+  "conf_nms_input": 0.001,
+  "iou_nms": 0.4,
+  "pred_rate_conf_threshold": 0.25,
+  "photo_stream_mode": "zero",
+  "photo_only": false,
+  "mixed_photo_zero_stream2": true,
+  "photo": {
+    "name": "photo_zero_stream2",
+    "n_images": 9085,
+    "n_gt": 8934,
+    "hit_rate_iou_0.5": 0.7133422878889635,
+    "hit_rate_iou_0.75": 0.23449742556525632,
+    "mean_best_iou": 0.5322555991338495,
+    "median_best_iou": 0.6439128816127777,
+    "mean_conf_at_best_iou": 0.27783758122555685,
+    "pred_rate_any_box": 1.0,
+    "pred_rate_conf_ge": 0.4868464501926252
+  },
+  "video": {
+    "name": "video_native_stream2",
+    "n_images": 3893,
+    "n_gt": 3840,
+    "hit_rate_iou_0.5": 0.9145833333333333,
+    "hit_rate_iou_0.75": 0.40572916666666664,
+    "mean_best_iou": 0.685078365047472,
+    "median_best_iou": 0.7248038649559021,
+    "mean_conf_at_best_iou": 0.6559748688217345,
+    "pred_rate_any_box": 1.0,
+    "pred_rate_conf_ge": 0.8820960698689956
+  }
+}

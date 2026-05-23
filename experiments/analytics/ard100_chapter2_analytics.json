@@ -1,0 +1,426 @@
+{
+  "splits": {
+    "train": {
+      "n_frames": 116802,
+      "n_scenes": 65,
+      "scenes": {
+        "phantom09": 1603,
+        "phantom10": 1592,
+        "phantom101": 3529,
+        "phantom103": 3020,
+        "phantom104": 2455,
+        "phantom105": 1286,
+        "phantom106": 2416,
+        "phantom107": 2502,
+        "phantom108": 1760,
+        "phantom109": 4021,
+        "phantom111": 3237,
+        "phantom112": 2843,
+        "phantom114": 1348,
+        "phantom115": 3894,
+        "phantom116": 2700,
+        "phantom117": 1887,
+        "phantom118": 1162,
+        "phantom120": 2753,
+        "phantom132": 2120,
+        "phantom137": 1641,
+        "phantom138": 1651,
+        "phantom139": 1289,
+        "phantom14": 1217,
+        "phantom140": 1632,
+        "phantom142": 2168,
+        "phantom143": 1882,
+        "phantom145": 815,
+        "phantom146": 1631,
+        "phantom147": 1867,
+        "phantom148": 1335,
+        "phantom149": 1230,
+        "phantom150": 1220,
+        "phantom17": 1599,
+        "phantom19": 1933,
+        "phantom20": 1589,
+        "phantom28": 1039,
+        "phantom29": 1635,
+        "phantom30": 1349,
+        "phantom32": 1356,
+        "phantom36": 1191,
+        "phantom40": 1811,
+        "phantom42": 1368,
+        "phantom43": 1634,
+        "phantom44": 1070,
+        "phantom46": 1622,
+        "phantom63": 1622,
+        "phantom65": 2105,
+        "phantom66": 1748,
+        "phantom68": 1494,
+        "phantom70": 1215,
+        "phantom71": 1627,
+        "phantom74": 1345,
+        "phantom75": 1633,
+        "phantom76": 955,
+        "phantom77": 1618,
+        "phantom78": 2052,
+        "phantom80": 1711,
+        "phantom81": 2038,
+        "phantom82": 1616,
+        "phantom84": 1603,
+        "phantom85": 1060,
+        "phantom86": 1640,
+        "phantom87": 1589,
+        "phantom89": 1624,
+        "phantom90": 1605
+      }
+    },
+    "val": {
+      "n_frames": 12978,
+      "n_scenes": 65,
+      "scenes": {
+        "phantom09": 196,
+        "phantom10": 206,
+        "phantom101": 371,
+        "phantom103": 337,
+        "phantom104": 242,
+        "phantom105": 153,
+        "phantom106": 281,
+        "phantom107": 285,
+        "phantom108": 219,
+        "phantom109": 475,
+        "phantom111": 359,
+        "phantom112": 304,
+        "phantom114": 151,
+        "phantom115": 451,
+        "phantom116": 298,
+        "phantom117": 211,
+        "phantom118": 127,
+        "phantom120": 299,
+        "phantom132": 217,
+        "phantom137": 187,
+        "phantom138": 173,
+        "phantom139": 150,
+        "phantom14": 132,
+        "phantom140": 166,
+        "phantom142": 230,
+        "phantom143": 216,
+        "phantom145": 84,
+        "phantom146": 167,
+        "phantom147": 230,
+        "phantom148": 164,
+        "phantom149": 119,
+        "phantom150": 129,
+        "phantom17": 199,
+        "phantom19": 225,
+        "phantom20": 209,
+        "phantom28": 100,
+        "phantom29": 163,
+        "phantom30": 149,
+        "phantom32": 143,
+        "phantom36": 158,
+        "phantom40": 200,
+        "phantom42": 130,
+        "phantom43": 165,
+        "phantom44": 129,
+        "phantom46": 176,
+        "phantom63": 177,
+        "phantom65": 233,
+        "phantom66": 200,
+        "phantom68": 154,
+        "phantom70": 134,
+        "phantom71": 172,
+        "phantom74": 154,
+        "phantom75": 165,
+        "phantom76": 94,
+        "phantom77": 180,
+        "phantom78": 226,
+        "phantom80": 177,
+        "phantom81": 240,
+        "phantom82": 183,
+        "phantom84": 196,
+        "phantom85": 139,
+        "phantom86": 158,
+        "phantom87": 153,
+        "phantom89": 174,
+        "phantom90": 194
+      }
+    },
+    "test": {
+      "n_frames": 72631,
+      "n_scenes": 35,
+      "scenes": {
+        "phantom02": 1799,
+        "phantom03": 1799,
+        "phantom04": 1499,
+        "phantom05": 1799,
+        "phantom08": 2788,
+        "phantom102": 3147,
+        "phantom110": 3413,
+        "phantom113": 2698,
+        "phantom119": 3297,
+        "phantom133": 1799,
+        "phantom135": 2398,
+        "phantom136": 1199,
+        "phantom141": 1798,
+        "phantom144": 2698,
+        "phantom22": 2098,
+        "phantom39": 1349,
+        "phantom41": 1798,
+        "phantom45": 1349,
+        "phantom47": 2887,
+        "phantom50": 1798,
+        "phantom54": 1798,
+        "phantom55": 1708,
+        "phantom56": 2098,
+        "phantom57": 1798,
+        "phantom58": 2218,
+        "phantom60": 2248,
+        "phantom61": 1798,
+        "phantom64": 1798,
+        "phantom73": 1978,
+        "phantom79": 1738,
+        "phantom92": 2398,
+        "phantom93": 1799,
+        "phantom94": 2247,
+        "phantom95": 1799,
+        "phantom97": 1798
+      }
+    },
+    "total_scenes_in_corpus": 100,
+    "set_train_phantoms": 65,
+    "set_test_phantoms": 35
+  },
+  "image_sizes": {
+    "from_voc_xml": {
+      "1920x1080": 202411
+    },
+    "xml_unique_resolutions": 1,
+    "jpg_sample_n": 500,
+    "jpg_sample_sizes": {
+      "1920x1080": 500
+    }
+  },
+  "bbox_objects": {
+    "n_gt_total": 199316,
+    "n_images_with_gt": 199290,
+    "n_images_empty_label": 3121,
+    "objects_per_image": {
+      "mean": 0.9847093290384415,
+      "median": 1.0,
+      "max": 2,
+      "hist": {
+        "1": 199264,
+        "0": 3121,
+        "2": 26
+      }
+    },
+    "by_split_objects_per_image_mean": {
+      "train": 0.9837245937569562,
+      "val": 0.9842810910772076,
+      "test": 0.986369456568132
+    },
+    "rel_area": {
+      "mean": 0.0001433388526626011,
+      "median": 8.4871605e-05,
+      "p5": 2.3629726e-05,
+      "p95": 0.00044559374999999997,
+      "bins_A0_A4": {
+        "A3: 2e-4–1e-3": 38073,
+        "A2: 5e-5–2e-4": 108229,
+        "A1: 1e-5–5e-5": 51719,
+        "A4: ≥1e-3": 1295
+      }
+    },
+    "distance_proxy_bins": {
+      "средняя (2e-4–1e-3)": 38073,
+      "далеко (5e-5–2e-4)": 108229,
+      "очень далеко (<5e-5)": 51719,
+      "близко (rel≥1e-3)": 1295
+    },
+    "bbox_width_px": {
+      "mean": 18.705285253165826,
+      "median": 15.99936,
+      "p5": 8.000639999999999,
+      "p95": 39.00096
+    },
+    "bbox_height_px": {
+      "mean": 12.632548303397622,
+      "median": 10.9998,
+      "p5": 6.0004800000000005,
+      "p95": 24.99984
+    },
+    "note_distance": "Дальность — proxy по rel_area (меньше bbox в доле кадра → дальше); меток дальности в VOC нет."
+  },
+  "day_night": {
+    "method": "median V (HSV), порог ночь V<85.0, 5 кадра/сцена",
+    "n_scenes_classified": 100,
+    "n_night_scenes": 2,
+    "n_day_scenes": 98,
+    "night_scenes": [
+      "phantom95",
+      "phantom97"
+    ],
+    "day_scenes_sample": [
+      "phantom02",
+      "phantom03",
+      "phantom04",
+      "phantom05",
+      "phantom08",
+      "phantom09",
+      "phantom10",
+      "phantom101",
+      "phantom102",
+      "phantom103",
+      "phantom104",
+      "phantom105",
+      "phantom106",
+      "phantom107",
+      "phantom108",
+      "phantom109",
+      "phantom110",
+      "phantom111",
+      "phantom112",
+      "phantom113"
+    ],
+    "frames_night": 3597,
+    "frames_day": 198814,
+    "by_split_day_night": {
+      "train": {
+        "day_frames": 116802,
+        "night_frames": 0,
+        "unknown": 0
+      },
+      "val": {
+        "day_frames": 12978,
+        "night_frames": 0,
+        "unknown": 0
+      },
+      "test": {
+        "day_frames": 69034,
+        "night_frames": 3597,
+        "unknown": 0
+      }
+    },
+    "caveat": "Нет меток день/ночь в VOC; классификация по яркости, для ВКР уточнить по паспорту ARD100."
+  },
+  "author_split": {
+    "prepare_SET_TRAIN_matches_author_set1": true,
+    "prepare_SET_TEST_matches_author_set2": true,
+    "n_train_phantoms": 65,
+    "n_test_phantoms": 35,
+    "author_low_light_scenes": [
+      "phantom133",
+      "phantom135",
+      "phantom136",
+      "phantom95",
+      "phantom97"
+    ],
+    "note": "Списки SET_TRAIN/SET_TEST в prepare_ard100_dataset.py совпадают с set1/set2 в generate_dataset.py."
+  },
+  "storage": {
+    "out_root_gb": 163.35,
+    "images_gb": 135.12,
+    "images2_gb": 28.14,
+    "labels_gb": 0.02,
+    "approx_per_frame_mb_dual": 0.826,
+    "note": "Dual-stream ≈ RGB (images) + FD5 (images2) + YOLO labels."
+  },
+  "voc_quality": {
+    "n_voc_xml": 202411,
+    "n_voc_objects_drone": 199317,
+    "difficult_eq_1_excluded_in_prepare": 0,
+    "truncated_eq_1": 20,
+    "drone_with_nonempty_yolo": 199316,
+    "bbox_noise_note": "При median bbox ~16×11 px сдвиг границы на 1 px сильно меняет IoU@0.75.",
+    "prepare_rule": "difficult=1 не попадает в YOLO; min_bbox_area по умолчанию 0."
+  },
+  "empty_labels": {
+    "train": {
+      "empty": 1919,
+      "with_gt": 114883,
+      "empty_pct": 1.64
+    },
+    "val": {
+      "empty": 204,
+      "with_gt": 12774,
+      "empty_pct": 1.57
+    },
+    "test": {
+      "empty": 998,
+      "with_gt": 71633,
+      "empty_pct": 1.37
+    },
+    "role": "Пустой label — кадр без GT Drone; при train даёт негатив/фон (objectness)."
+  },
+  "temporal_correlation": {
+    "median_norm_diff_dt1": 0.013127980513192932,
+    "median_norm_diff_dt5": 0.032962539336722343,
+    "median_norm_diff_dt30": 0.06768081275720164,
+    "interpretation": "Малый Δ при dt=1 → соседние кадры почти дубли; 202k кадров ≠ 202k независимых выборок.",
+    "heuristic_effective_factor": 0.19
+  },
+  "fps": {
+    "n_videos": 100,
+    "fps_unique": [
+      26.009,
+      28.535,
+      29.684,
+      29.77,
+      29.962,
+      29.967,
+      29.97,
+      30.17,
+      30.387,
+      30.453
+    ],
+    "fps_median": 29.97002997002997,
+    "duration_sec_median": 60.977583333333335,
+    "duration_sec_mean": 68.40701922304335
+  },
+  "rel_area_e_bbox_val": {
+    "n_gt_val_video": 12774,
+    "e_bbox_q20_tau": 3.6504,
+    "e_bbox_median": 10.177243709564209,
+    "rel_area_median": 8.6799132e-05,
+    "joint_small_rel_and_low_eb": 1015,
+    "joint_small_rel_and_low_eb_pct": 7.9,
+    "cross_tab_top10": {
+      "A2: 5e-5–2e-4|Eb_Q1": 1517,
+      "A2: 5e-5–2e-4|Eb_Q0": 1381,
+      "A2: 5e-5–2e-4|Eb_Q3": 1365,
+      "A2: 5e-5–2e-4|Eb_Q2": 1323,
+      "A2: 5e-5–2e-4|Eb_Q4": 1277,
+      "A3: 2e-4–1e-3|Eb_Q4": 1053,
+      "A1: 1e-5–5e-5|Eb_Q0": 1015,
+      "A1: 1e-5–5e-5|Eb_Q2": 724,
+      "A3: 2e-4–1e-3|Eb_Q3": 720,
+      "A1: 1e-5–5e-5|Eb_Q1": 680
+    },
+    "cross_tab_full": {
+      "A3: 2e-4–1e-3|Eb_Q3": 720,
+      "A3: 2e-4–1e-3|Eb_Q2": 497,
+      "A3: 2e-4–1e-3|Eb_Q4": 1053,
+      "A2: 5e-5–2e-4|Eb_Q4": 1277,
+      "A3: 2e-4–1e-3|Eb_Q1": 355,
+      "A2: 5e-5–2e-4|Eb_Q2": 1323,
+      "A2: 5e-5–2e-4|Eb_Q1": 1517,
+      "A2: 5e-5–2e-4|Eb_Q3": 1365,
+      "A1: 1e-5–5e-5|Eb_Q0": 1015,
+      "A1: 1e-5–5e-5|Eb_Q1": 680,
+      "A1: 1e-5–5e-5|Eb_Q2": 724,
+      "A2: 5e-5–2e-4|Eb_Q0": 1381,
+      "A1: 1e-5–5e-5|Eb_Q3": 449,
+      "A3: 2e-4–1e-3|Eb_Q0": 159,
+      "A1: 1e-5–5e-5|Eb_Q4": 189,
+      "A4: ≥1e-3|Eb_Q3": 21,
+      "A4: ≥1e-3|Eb_Q4": 36,
+      "A4: ≥1e-3|Eb_Q1": 4,
+      "A4: ≥1e-3|Eb_Q2": 9
+    }
+  },
+  "sharpness": {
+    "sample_n": 2500,
+    "laplacian_var_median": 2831.8459227032226,
+    "laplacian_var_p10": 1115.2735192978057,
+    "bottom_decile_blurry_count": 250,
+    "bottom_decile_pct": 10.0,
+    "note": "Нижний дециль по резкости — эвристика motion blur / расфокус."
+  }
+}

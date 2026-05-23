@@ -1,0 +1,9 @@
+# Автогенерация: scripts/prepare_ard100_dataset.py
+train: /home/tanyadiplom/data/ard100/train.txt
+train2: /home/tanyadiplom/data/ard100/train2.txt
+val: /home/tanyadiplom/data/ard100/val.txt
+val2: /home/tanyadiplom/data/ard100/val2.txt
+test: /home/tanyadiplom/data/ard100/test.txt
+
+nc: 1
+names: ['Drone']

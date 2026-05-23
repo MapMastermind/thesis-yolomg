@@ -1,0 +1,27 @@
+{
+  "weights": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_adaptiveFusion_b56_e12_from_zeroP_physgpu1/weights/best.pt",
+  "imgsz": 960,
+  "conf_nms_input": 0.001,
+  "iou_nms": 0.4,
+  "pred_rate_conf_threshold": 0.25,
+  "photo_stream_mode": "clahe_dog",
+  "photo_only": false,
+  "mixed_photo_zero_stream2": false,
+  "photo": {
+    "name": "photo_clahe_dog_stream2",
+    "n_images": 0,
+    "n_gt": 0
+  },
+  "video": {
+    "name": "video_native_stream2",
+    "n_images": 12978,
+    "n_gt": 12774,
+    "hit_rate_iou_0.5": 0.9012838578362299,
+    "hit_rate_iou_0.75": 0.3973696571160169,
+    "mean_best_iou": 0.6754641558255602,
+    "median_best_iou": 0.7219383418560028,
+    "mean_conf_at_best_iou": 0.6285690626493171,
+    "pred_rate_any_box": 1.0,
+    "pred_rate_conf_ge": 0.845584835876098
+  }
+}

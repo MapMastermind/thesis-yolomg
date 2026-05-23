@@ -1,0 +1,111 @@
+{
+  "weights": "/home/tanyadiplom/Static_YOLOMG/runs/train/ard100_mixed640_zeroP_vidDrop03_from_vidbest_gpu0/weights/best.pt",
+  "imgsz": 960,
+  "area_edges": [
+    0.0,
+    1e-05,
+    5e-05,
+    0.0002,
+    0.001,
+    1.0
+  ],
+  "pred_rate_conf": 0.25,
+  "sweep": [
+    {
+      "preset": "flat_0.25",
+      "conf_by_bin": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "photo_hit_0.5": 0.40799194089993285,
+      "video_hit_0.5": 0.84453125,
+      "photo_pred_rate": 0.5452944413869015,
+      "video_pred_rate": 0.9011045466221423,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    },
+    {
+      "preset": "default_s1",
+      "conf_by_bin": [
+        0.55,
+        0.45,
+        0.32,
+        0.25,
+        0.25
+      ],
+      "photo_hit_0.5": 0.3623237071860309,
+      "video_hit_0.5": 0.8122395833333333,
+      "photo_pred_rate": 0.4631810676940011,
+      "video_pred_rate": 0.8525558695093758,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    },
+    {
+      "preset": "micro_0.60",
+      "conf_by_bin": [
+        0.6,
+        0.5,
+        0.35,
+        0.25,
+        0.25
+      ],
+      "photo_hit_0.5": 0.34486232370718606,
+      "video_hit_0.5": 0.803125,
+      "photo_pred_rate": 0.4348926802421574,
+      "video_pred_rate": 0.839455432828153,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    },
+    {
+      "preset": "micro_0.65",
+      "conf_by_bin": [
+        0.65,
+        0.55,
+        0.4,
+        0.28,
+        0.25
+      ],
+      "photo_hit_0.5": 0.3210208193418402,
+      "video_hit_0.5": 0.7846354166666667,
+      "photo_pred_rate": 0.39713813979086404,
+      "video_pred_rate": 0.8145389160030825,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    },
+    {
+      "preset": "micro_0.70",
+      "conf_by_bin": [
+        0.7,
+        0.58,
+        0.42,
+        0.3,
+        0.25
+      ],
+      "photo_hit_0.5": 0.30926796507723303,
+      "video_hit_0.5": 0.77109375,
+      "photo_pred_rate": 0.37842597688497526,
+      "video_pred_rate": 0.7993835088620601,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    },
+    {
+      "preset": "micro_0.55_mid_0.35",
+      "conf_by_bin": [
+        0.55,
+        0.45,
+        0.35,
+        0.28,
+        0.22
+      ],
+      "photo_hit_0.5": 0.34743675845086186,
+      "video_hit_0.5": 0.809375,
+      "photo_pred_rate": 0.43819482663731424,
+      "video_pred_rate": 0.8461340868225019,
+      "photo_n_gt": 8934,
+      "video_n_gt": 3840
+    }
+  ]
+}
