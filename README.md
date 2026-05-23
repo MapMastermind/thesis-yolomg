@@ -94,7 +94,6 @@ Exploratory-вариант V1: `ard100_mixed640_adaptiveFusion_v2_q0os_*`. Пр�
 ## Быстрый старт
 
 ```bash
-cd ../Static_YOLOMG && source .venv/bin/activate
 
 # подготовка данных (пути в data/*.yaml)
 python ../diplom_ard100_thesis/scripts/data_prep/prepare_ard100_dataset.py
